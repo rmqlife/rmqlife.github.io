@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "一个人，和一个世界-《Into the Wild》"
-date: 2016-03-01
+date: 2014-03-01
 categories: reading
 ---
 
