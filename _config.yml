@@ -1,63 +1,14 @@
-# Site
-title:              rmqlife Garden
-bio:                ''
-description:        ""
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+# Site settings
+title: rmqlife Garden 
+email: rmqlife@gmail.com
+description:  # this means to ignore newlines until "baseurl:"
+  "Something interesting or useful will be recorded.
+  
+  记录一些有趣的或有用的。"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://rmqlife.github.io" # the base hostname & protocol for your site
+twitter_username: rmqlife
+github_username:  rmqlife
 
-# Comments
-disqus_shortname:   default
-
-# Social
-analytics-id:       "UA-50149805-3"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
-
-# Other
-background_image:   /images/bg.jpg
-# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
-slapform_thankyou_page: /thank-you
-
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
-
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-
-jekyll-mentions:
-    base_url: https://github.com
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+# Build settings
+markdown: kramdown
