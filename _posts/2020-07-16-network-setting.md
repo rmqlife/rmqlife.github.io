@@ -19,6 +19,6 @@ And here are the main steps:
 * Under the tab *IPV4 settings", choose the option *Shared to other computers* for *Method* drag-down menu.
 
 Here is a draft for the wired connection:
-
+![Wired Connection](http://rmqlife.github.io/images/adaptive_network_setting.png)
 
 Then it's time to enjoy your stable and private wifi connections!
