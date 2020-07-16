@@ -14,11 +14,11 @@ Here are my hardware settings:
 
 And here are the main steps:
 * Connect the desktop with the router through an ethernet cable
-* Launch the network tool preinstalled on Ubuntu by typing *nm-connection-editor* in terminal
-* Click *+* button and select *Ethernet* to set the rule
-* Under the tab *IPV4 settings", choose the option *Shared to other computers* for *Method* drag-down menu.
+* Launch the network tool preinstalled on Ubuntu by typing **nm-connection-editor** in terminal
+* Click **+** button and select **Ethernet** to set the rule
+* Under the tab **IPV4 settings**, choose the option **Shared to other computers** for **Method** drag-down menu.
 
 Here is a draft for the wired connection:
-![Wired Connection](http://rmqlife.github.io/images/adaptive_network_setting.png)
+![Wired Connection](adaptive_network_setting.png)
 
 Then it's time to enjoy your stable and private wifi connections!
