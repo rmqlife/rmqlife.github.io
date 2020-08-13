@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "愤怒的出路—《三块广告牌》"
+title: "愤怒的出路——《三块广告牌》"
 date: 2019-11-21
 categories: reading
 ---
