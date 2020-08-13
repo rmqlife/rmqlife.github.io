@@ -1,6 +1,6 @@
 ---
 date: 2012-02-12
-title: "无错一生-萧相国世家"
+title: "无错一生——《萧相国世家》"
 categories: reading
 layout: post
 ---
