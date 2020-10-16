@@ -40,3 +40,13 @@ My current settings:
 
 - [Workspace Indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
 
+### Useful Tools:
+
+- [brightness-controller](https://github.com/LordAmit/Brightness), a python written program. It can change the brightness of the monitor by software.
+
+- [Tilix](https://gnunn1.github.io/tilix-web/), a advanced terminal mangager.
+
+- [FlatHub](https://flatpak.org/setup/), a richer software store for linux.
+
+- [Timeshift](https://github.com/teejee2008/timeshift), backup system to avoid unpridictable problems caused by update/grub/etc. Can be install using apt-get.
+
