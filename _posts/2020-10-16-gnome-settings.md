@@ -4,7 +4,7 @@ title: "Gnome Desktop Settings"
 date: 2020-10-15
 categories: reading
 ---
-Here are the settings for current Ubuntu/Gnome desktop environment.
+Here are the settings for my current Ubuntu/Gnome desktop environment.
 
 ![Comment]({{ site.url }}/images/desktop.png)
 
@@ -12,7 +12,7 @@ Here are the settings for current Ubuntu/Gnome desktop environment.
 ### Theme / Icons
 - [Pling Store](), download as a AppImage(executable). It can download/organize/store themes. For ubuntu 20.04, which uses GTK3 as default desktop environment, you can search under GTK3 categories.
 
-- [Gnome Tweak Tools](https://itsfoss.com/gnome-tweak-tool/), use the following command to install. It can apply the changes for the system.
+- [Gnome Tweak Tools](https://itsfoss.com/gnome-tweak-tool/), use the following command to install. It can apply the changes to the system.
 
 {% highlight bash %}
 sudo apt install gnome-tweaks
@@ -50,3 +50,11 @@ My current settings:
 
 - [Timeshift](https://github.com/teejee2008/timeshift), backup system to avoid unpridictable problems caused by update/grub/etc. Can be install using apt-get.
 
+### Timezone Conflict with Windows Dual Boot
+
+- [Explanation](https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/)
+
+{% highlight bash %}
+timedatectl set-local-rtc 1 --adjust-system-clock
+timedatectl
+{% endhighlight %}
