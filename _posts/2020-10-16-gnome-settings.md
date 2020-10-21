@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gnome Desktop Settings"
-date: 2020-10-15
+date: 2020-10-16
 categories: reading
 ---
 Here are the settings for my current Ubuntu/Gnome desktop environment.
@@ -58,3 +58,11 @@ My current settings:
 timedatectl set-local-rtc 1 --adjust-system-clock
 timedatectl
 {% endhighlight %}
+
+### Input Methods Configurations
+I prefer fcitx to ibus. 
+
+- Chinese: Sogou Pinyin 搜狗拼音
+- Japanese: Mozc 
+
+Mozc uses F7 to overwrtite Katakana. 
