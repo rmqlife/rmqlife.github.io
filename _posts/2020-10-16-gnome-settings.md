@@ -65,4 +65,4 @@ I prefer fcitx to ibus.
 - Chinese: Sogou Pinyin 搜狗拼音
 - Japanese: Mozc 
 
-Mozc uses F7 to overwrtite Katakana. 
+Mozc uses F7 to overwrtite Katakana. Remember to put English Keyboard as primary input method so that you can use ctrl+blank to toggle it with others. And ctrl+shift can toggle between others.
