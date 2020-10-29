@@ -66,3 +66,4 @@ I prefer fcitx to ibus.
 - Japanese: Mozc 
 
 Mozc uses F7 to overwrtite Katakana. Remember to put English Keyboard as primary input method so that you can use ctrl+blank to toggle it with others. And ctrl+shift can toggle between others.
+
