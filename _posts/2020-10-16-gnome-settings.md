@@ -67,3 +67,5 @@ I prefer fcitx to ibus.
 
 Mozc uses F7 to overwrtite Katakana. Remember to put English Keyboard as primary input method so that you can use ctrl+blank to toggle it with others. And ctrl+shift can toggle between others.
 
+There is conflict between fcitx and the VS Code Editor when downloading it from snap store. So it is recommended to use Microsoft's deb package. 
+
