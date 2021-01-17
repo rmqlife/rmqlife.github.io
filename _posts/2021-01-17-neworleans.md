@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "梦可以很旧——新奥尔良"
+title: "零碎的旧梦——新奥尔良游记"
 date: 2021-01-17
 categories: reading
 ---
