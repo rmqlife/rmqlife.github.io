@@ -22,3 +22,11 @@ Here is a draft for the wired connection:
 ![Wired Connection]({{ site.url }}/images/adaptive_network_setting.png)
 
 Then it's time to enjoy your stable and private WIFI connections!
+
+
+
+### Sharing WIFI over WIFI
+* Set up a WIFI hotspot using **nm-connection-editor** in terminal
+* Create SSID and WPA2 password
+* Select device(WIFI MAC address)
+* To apply the created WIFI hotspot, use Hidden Network Tab (dots button on the top) within Gnome WIFI Settings.
