@@ -19,13 +19,13 @@ categories: reading
 
 离开大西洋城的时候，已经入夜了。我开车回去的时候一直在想，这里曾经也是个美好的海滨小城，它繁华然后衰颓，却不再美好。物质带来的美好和之前的日落一样，转瞬即逝。
 
-![]({{ site.url }}/images/atlantic/1.jpg)
-![]({{ site.url }}/images/atlantic/2.jpg)
-![]({{ site.url }}/images/atlantic/3.jpg)
-![]({{ site.url }}/images/atlantic/4.jpg)
-![]({{ site.url }}/images/atlantic/5.jpg)
-![]({{ site.url }}/images/atlantic/6.jpg)
-![]({{ site.url }}/images/atlantic/7.jpg)
-![]({{ site.url }}/images/atlantic/8.jpg)
-![]({{ site.url }}/images/atlantic/9.jpg)
+![]({{ site.url }}/images/atlantic/1.jpeg)
+![]({{ site.url }}/images/atlantic/2.jpeg)
+![]({{ site.url }}/images/atlantic/3.jpeg)
+![]({{ site.url }}/images/atlantic/4.jpeg)
+![]({{ site.url }}/images/atlantic/5.jpeg)
+![]({{ site.url }}/images/atlantic/6.jpeg)
+![]({{ site.url }}/images/atlantic/7.jpeg)
+![]({{ site.url }}/images/atlantic/8.jpeg)
+![]({{ site.url }}/images/atlantic/9.jpeg)
 
