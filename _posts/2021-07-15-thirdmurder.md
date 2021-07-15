@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "故事的容器 - 第三度嫌疑犯"
+title: "故事的容器——第三度嫌疑犯"
 date: 2021-07-15
 categories: reading
 ---
