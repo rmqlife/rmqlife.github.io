@@ -5,6 +5,8 @@ date: 2021-08-18
 categories: reading
 ---
 
+![]({{ site.url }}/images/gettysburg/1.jpeg)
+
 葛底斯堡是个小镇，国家公园由当年的战场围成，和小镇几乎不分彼此。以至于开车进入公园的时候，都没有看到显著的标识，只是路旁的建筑慢慢从车窗后消失，只留下空空荡荡的平原，荒草之上零星点缀着雕像与纪念碑。
 
 之前看电影《林肯》，葛底斯堡是林肯一生的转折点，也是美国近代历史的转折点。1863年7月，米德将军带领的联邦北军的Potomac军团打败了李将军带领的邦联南军的Nothern Virginia军团。然而喊杀声和硝烟早已不见踪迹，历史只留在了书籍上，刻在了人们心里。公园里大大小小的景点均为当年战斗的遗址，星罗棋布地遍布在广阔的平原之上。
@@ -20,3 +22,22 @@ categories: reading
 葛底斯堡镇上有很多老建筑，包括当年林肯留宿的房子，各种餐厅和纪念品商店琳琅满目，偶尔会看到一两个北军扮相、扛着枪的士兵找人合影。北军穿蓝色，南军穿灰色，很好辨认。我在一个橱窗里看到了南北军将领的套娃，有大有小有蓝有灰，格兰特、李、米德依次往下，可以套在一起。而形状和涂装，都是仿照着最传统的俄罗斯设计。
 
 快天黑的时候，我终于逛完了这座大大的公园。公园门口还有另一个园区，是艾森豪威尔总统的故居。他是二战欧洲战区的总指挥，战后以老兵的身份竞选总统。作为军人，他对这片战场有着特殊的感情，因而在旁边建立了他的农庄。白色的房子很简单，和美国乡间常见的并无二致，在这里，他接见了北约的诸多领导，大概因为这里的象征意义。他的后人将这里捐给国家公园，却几乎没什么人来参观。六月的麦子已经成熟，房子被金色的麦浪包裹着，我看着远处的战场，恍惚间仿佛又看到了那些消散已久的硝烟。
+
+![]({{ site.url }}/images/gettysburg/2.jpeg)
+![]({{ site.url }}/images/gettysburg/3.jpeg)
+![]({{ site.url }}/images/gettysburg/4.jpeg)
+![]({{ site.url }}/images/gettysburg/5.jpeg)
+![]({{ site.url }}/images/gettysburg/6.jpeg)
+![]({{ site.url }}/images/gettysburg/7.jpeg)
+![]({{ site.url }}/images/gettysburg/8.jpeg)
+![]({{ site.url }}/images/gettysburg/9.jpeg)
+![]({{ site.url }}/images/gettysburg/10.jpeg)
+![]({{ site.url }}/images/gettysburg/11.jpeg)
+![]({{ site.url }}/images/gettysburg/12.jpeg)
+![]({{ site.url }}/images/gettysburg/13.jpeg)
+![]({{ site.url }}/images/gettysburg/14.jpeg)
+![]({{ site.url }}/images/gettysburg/15.jpeg)
+![]({{ site.url }}/images/gettysburg/16.jpeg)
+
+
+
