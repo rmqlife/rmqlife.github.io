@@ -33,11 +33,5 @@ categories: reading
 ![]({{ site.url }}/images/gettysburg/9.jpeg)
 ![]({{ site.url }}/images/gettysburg/10.jpeg)
 ![]({{ site.url }}/images/gettysburg/11.jpeg)
-![]({{ site.url }}/images/gettysburg/12.jpeg)
-![]({{ site.url }}/images/gettysburg/13.jpeg)
-![]({{ site.url }}/images/gettysburg/14.jpeg)
-![]({{ site.url }}/images/gettysburg/15.jpeg)
-![]({{ site.url }}/images/gettysburg/16.jpeg)
-
 
 
