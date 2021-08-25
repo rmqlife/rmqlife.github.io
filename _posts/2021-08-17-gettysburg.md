@@ -5,7 +5,6 @@ date: 2021-08-17
 categories: reading
 ---
 
-![]({{ site.url }}/images/gettysburg/1.jpeg)
 
 葛底斯堡是个小镇，国家公园由当年的战场围成，和小镇几乎不分彼此。以至于开车进入公园的时候，都没有看到显著的标识，只是路旁的建筑慢慢从车窗后消失，只留下空空荡荡的平原，荒草之上零星点缀着雕像与纪念碑。
 
@@ -25,15 +24,6 @@ categories: reading
 
 葛底斯堡战役在1863年的那个夏天已经结束。林肯和战友们结束了国家的分裂，但之后的若干年里，分裂的伤疤都没能愈合。葛底斯堡有什么？有麦浪、有纪念碑、有塑像、有故事。这里早已没了硝烟，硝烟早已在其他地方燃起，久久不散。
 
-![]({{ site.url }}/images/gettysburg/2.jpeg)
-![]({{ site.url }}/images/gettysburg/3.jpeg)
-![]({{ site.url }}/images/gettysburg/4.jpeg)
-![]({{ site.url }}/images/gettysburg/5.jpeg)
-![]({{ site.url }}/images/gettysburg/6.jpeg)
-![]({{ site.url }}/images/gettysburg/7.jpeg)
-![]({{ site.url }}/images/gettysburg/8.jpeg)
-![]({{ site.url }}/images/gettysburg/9.jpeg)
-![]({{ site.url }}/images/gettysburg/10.jpeg)
-![]({{ site.url }}/images/gettysburg/11.jpeg)
+
 
 
