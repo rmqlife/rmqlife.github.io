@@ -1,0 +1,65 @@
+I"�<h2 id="sony-a7-camera-remote-control">Sony A7 Camera Remote Control</h2>
+<h4 id="connect-wifinfc">Connect WIFI/NFC</h4>
+
+<p>To connect the camera with a mobile phone</p>
+
+<ul>
+  <li>Select a picture in view mode</li>
+  <li>Press <strong>fn</strong> button which is also the sharing button</li>
+  <li>Then the camera will start its WIFI daemon</li>
+  <li>Install Image Edge App from App Store</li>
+  <li>Support View/Remote Control <strong>Shooting Only</strong>/Edit</li>
+</ul>
+
+<h4 id="connect-computer-via-usb">Connect Computer via USB</h4>
+
+<ul>
+  <li>Go to Settings menu</li>
+  <li>Locate the last section, choose the <strong>USB Behavior</strong>, and select <strong>PC Control</strong></li>
+  <li>Install Image Edge App for Mac/PC</li>
+  <li>Support the following functions: View/Remote Control <strong>Shooting and Recording</strong>/Edit</li>
+</ul>
+
+<h2 id="linux-video-editing">Linux Video Editing</h2>
+<h3 id="tools">Tools</h3>
+<ul>
+  <li>Blender :)</li>
+  <li><a href="https://jliljebl.github.io/flowblade/index.html">Flowblade</a></li>
+  <li><a href="https://www.openshot.org/">OpenShot</a>, it has AppImage file, and support GPU rendering</li>
+  <li><a href="">Aegisub</a>, subtitle editor, it has the audio visualization.</li>
+  <li><a href="https://arctime.org/index.html">ArcTime</a>, subtitle editor with Chinese support, Win/Mac/Linux</li>
+  <li><a href="">HandBrake</a>, ffmepg front-end. I use it to burn the subtitle files to the video.</li>
+  <li><a href="https://github.com/deezer/spleeter">Spleeter</a>, a tool from academic research using DL. It can split the audio into separate channels. Python/Conda/Tensorflow required.</li>
+  <li><a href="">Audacity</a>, audio editor.</li>
+</ul>
+
+<p>OpenShot Quick Start: 
+Ctrl + J/K/L, shortcut for cutting from right/middle/left (similar to VIM).</p>
+
+<p>Here are the useful command lines I tested:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#enable MacOS Catalina to use ArcTime</span>
+<span class="nb">sudo </span>spctl <span class="nt">--master-enable</span> 
+<span class="nb">sudo </span>spctl <span class="nt">--master-disable</span>
+
+<span class="c">#extract audio</span>
+ffmpeg <span class="nt">-i</span> input-video.avi <span class="nt">-vn</span> <span class="nt">-acodec</span> copy output-audio.aac
+
+<span class="c">#split audio</span>
+spleeter separate <span class="nt">-i</span> input.aac <span class="nt">-p</span> spleeter:2stems <span class="nt">-o</span> output</code></pre></figure>
+
+<p>#subtitles transcode 
+ffmpeg -i input.ass output.srt</p>
+
+<p>#’burn’ the subtitle files to the video</p>
+
+<h3 id="workflow">Workflow</h3>
+<ul>
+  <li>Cut the video using Openshot, then export with High Quality Profile (may apply GPU to accelerate the process if possible)</li>
+  <li>Extract audio using ffmpeg and spleeter</li>
+  <li>Create subtitle files with Aegisub</li>
+  <li>Burn the subtitles to the video using HandBrake(GUI) or ffmpeg(command line)</li>
+  <li>Publish :)</li>
+</ul>
+
+:ET

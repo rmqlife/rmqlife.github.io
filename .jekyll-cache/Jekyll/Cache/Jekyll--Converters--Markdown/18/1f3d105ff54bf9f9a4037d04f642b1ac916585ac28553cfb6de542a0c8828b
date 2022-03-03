@@ -1,0 +1,42 @@
+I"�<p>ImageMagick is a powerful tool which can do most “converting” things about images.</p>
+
+<ol>
+  <li>a substitution of the <code class="language-plaintext highlighter-rouge">Acrobat</code>, convert multiple images to a pdf file.
+…</li>
+</ol>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">convert image<span class="k">*</span>.jpg scan.pdf</code></pre></figure>
+
+<ol>
+  <li>resize images</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># save as</span>
+convert image.jpg <span class="nt">-resize</span> <span class="s2">"20%"</span> image-icon.jpg
+<span class="c"># change on the file</span>
+mogrify <span class="k">*</span>.jpg <span class="nt">-resize</span> <span class="s2">"20%"</span></code></pre></figure>
+
+<ol>
+  <li>rename images</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">convert <span class="s1">'*.jpg'</span> pic%03d.jpg
+<span class="c"># as pic001.jpg pic002.jpg pic003.jpg ...</span>
+convert <span class="k">*</span>.jpg %d.jpg
+<span class="c"># as 1.jpg 2.jpg 3.jpg ...</span></code></pre></figure>
+
+<ol>
+  <li>for transfer images from SD card</li>
+</ol>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># copy to local</span>
+<span class="nb">cp</span> ./images ~/local
+<span class="c"># resize images to load faster, build icons</span>
+mogrify ./<span class="k">*</span>.jpg <span class="nt">-resize</span> <span class="s2">"20%"</span>
+<span class="c"># delete the bad images</span>
+<span class="c"># list the remained</span>
+find ./ <span class="nt">-name</span> <span class="s2">"*.JPG"</span> <span class="o">&gt;&gt;</span> filelist.txt
+<span class="c"># copy filelist, change directory to SD　card</span>
+<span class="c"># copy the images to the local as you selected on the icons.</span>
+<span class="nb">cat </span>filelist.txt | xargs <span class="nt">-t</span> <span class="nb">mv</span> ~/Pictures/</code></pre></figure>
+
+:ET

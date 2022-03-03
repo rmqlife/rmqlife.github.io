@@ -1,0 +1,103 @@
+I"Ò<p>Here are several convinient commands I used for setting up workspace.</p>
+
+<h3 id="cuda">CUDA</h3>
+
+<p><a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions">NVIDIA CUDA Installation Guide for Linux</a></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># To verify that your GPU is CUDA-capable, go to your distribution's equivalent of System Properties, or, from the command line, enter:</span>
+lspci | <span class="nb">grep</span> <span class="nt">-i</span> nvidia</code></pre></figure>
+
+<p><a href="https://developer.nvidia.com/cuda-downloads?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1804&amp;target_type=deblocal">For Linux</a></p>
+
+<p>The base installer is available for download below.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
+<span class="nb">sudo mv </span>cuda-ubuntu1804.pin /etc/apt/preferences.d/cuda-repository-pin-600
+wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> cuda-repo-ubuntu1804-10-2-local-10.2.89-440.33.01_1.0-1_amd64.deb
+<span class="nb">sudo </span>apt-key add /var/cuda-repo-10-2-local-10.2.89-440.33.01/7fa2af80.pub
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nt">-y</span> <span class="nb">install </span>cuda</code></pre></figure>
+
+<p>Then most important, disable secure boot within BIOS!</p>
+
+<h3 id="pytorch">PyTorch</h3>
+
+<p><a href="https://pytorch.org/get-started/locally/">Official PyTorch Doc</a></p>
+
+<p>To test if pytorch is installed with GPU support:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">torch</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">current_device</span><span class="p">()</span>
+<span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">get_device_name</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="s">'GeForce GTX 1080 Ti'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">torch</span><span class="p">.</span><span class="n">cuda</span><span class="p">.</span><span class="n">is_available</span><span class="p">()</span>
+<span class="bp">True</span></code></pre></figure>
+
+<h3 id="pybullet">PyBullet</h3>
+
+<p>PyBullet and Bullet are separate packages.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">pip <span class="nb">install </span>pybullet
+wget https://github.com/bulletphysics/bullet3/archive/2.88.zip
+unzip 2.88.zip
+<span class="nb">cd </span>bullet3-2.88
+./build_cmake_pybullet_double.sh</code></pre></figure>
+
+<h3 id="mypaint-wrapper-from-spiral">MyPaint Wrapper from SPIRAL</h3>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get <span class="nb">install </span>cmake pkg-config protobuf-compiler libprotobuf-dev libjson-c-dev intltool
+pip <span class="nb">install </span>six setuptools numpy scipy tensorflow-hub dm-sonnet<span class="o">==</span>1.35
+<span class="c"># tweak compatible version for tensorflow</span>
+pip <span class="nb">install </span><span class="nv">gast</span><span class="o">=</span>0.2.2
+conda <span class="nb">install </span>tensorflow-probability  <span class="nv">tensorflow</span><span class="o">==</span>1.14 
+python3 setup.py develop</code></pre></figure>
+
+<ul>
+  <li><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conda env</a></li>
+  <li><a href="https://anaconda.org/conda-forge/cmake/">conda-forge cmake</a></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Via conda</span>
+conda init zsh
+
+conda create <span class="nt">--name</span> spiral <span class="nv">python</span><span class="o">=</span>3.7 <span class="nv">numpy</span><span class="o">==</span>1.16 jupyter matplotlib <span class="nv">gast</span><span class="o">=</span>0.2.2 astor
+conda <span class="nb">install </span><span class="nv">cmake</span><span class="o">==</span>3.15 <span class="nt">-c</span> conda-forge
+conda <span class="nb">install </span>pytorch torchvision <span class="nv">cudatoolkit</span><span class="o">=</span>10.1 <span class="nt">-c</span> pytorch
+pip <span class="nb">install </span>opencv-python
+
+conda remove <span class="nt">--name</span> spiral <span class="nt">--all</span>
+conda info envs</code></pre></figure>
+
+<h3 id="remote-access-tool">Remote Access Tool</h3>
+
+<ul>
+  <li><a href="https://dashboard.ngrok.com/get-started">ngrok login</a></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
+unzip ngrok-stable-linux-amd64.zip
+<span class="c"># enable ssh</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>openssh-server
+<span class="c"># usage examples</span>
+ngrok tcp 22
+ngrok http 8888
+<span class="c"># install jupyterlab :)</span>
+conda <span class="nb">install </span>jupyterlab
+jupyter notebook <span class="nt">--generate-config</span>
+<span class="nb">echo</span> <span class="s2">"c.NotebookApp.allow_remote_access = True"</span> <span class="o">&gt;&gt;</span> ~/.jupyter/jupyter_notebook_config.py
+<span class="nb">echo</span> <span class="s2">"c.NotebookApp.open_browser = False"</span> <span class="o">&gt;&gt;</span> ~/.jupyter/jupyter_notebook_config.py
+jupyter notebook password</code></pre></figure>
+
+<ul>
+  <li><a href="http://www.tonisoto.com/2013/07/launching-teamviewer-remotely-throught-ssh/">Teamviewer ssh tool</a></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># some commands need to be run as superuser</span>
+teamviewer <span class="nt">--info</span>
+teamviewer <span class="nt">--passwd</span>
+teamviewer <span class="nt">--daemon</span> start/stop/restart</code></pre></figure>
+
+<p><a href="https://help.ubuntu.com/stable/ubuntu-help/sharing-media.html.en">Media Server</a></p>
+:ET

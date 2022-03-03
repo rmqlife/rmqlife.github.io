@@ -1,0 +1,87 @@
+I"�<p>Here are the settings for my current Ubuntu/Gnome desktop environment.</p>
+
+<p><img src="http://localhost:4000/images/desktop.png" alt="Comment" /></p>
+
+<h3 id="theme--icons">Theme / Icons</h3>
+<ul>
+  <li>
+    <p><a href="">Pling Store</a>, download as a AppImage(executable). It can download/organize/store themes. For ubuntu 20.04, which uses GTK3 as default desktop environment, you can search under GTK3 categories.</p>
+  </li>
+  <li>
+    <p><a href="https://itsfoss.com/gnome-tweak-tool/">Gnome Tweak Tools</a>, use the following command to install. It can apply the changes to the system.</p>
+  </li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>gnome-tweaks</code></pre></figure>
+
+<p>My current settings:</p>
+<ul>
+  <li>Theme: Orchis Dark</li>
+  <li>Icon: Papirus</li>
+</ul>
+
+<h3 id="dock">Dock</h3>
+
+<ul>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/1160/dash-to-panel/">Dash to Panel</a>, a Win10/KDE style panel. It can tweak the behaviors of the different area. The good thing is that it can perfectly replace system default dock.</p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/6/applications-menu/">Applications Menu</a></p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/779/clipboard-indicator/">Clipboard Indicator</a></p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/2141/horizontal-workspaces/">Horizontal workspaces</a></p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/750/openweather/">Open Weather</a></p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/8/places-status-indicator/">Places Status Indicator</a></p>
+  </li>
+  <li>
+    <p><a href="https://extensions.gnome.org/extension/21/workspace-indicator/">Workspace Indicator</a></p>
+  </li>
+</ul>
+
+<h3 id="useful-tools">Useful Tools:</h3>
+
+<ul>
+  <li>
+    <p><a href="https://github.com/LordAmit/Brightness">brightness-controller</a>, a python written program. It can change the brightness of the monitor by software.</p>
+  </li>
+  <li>
+    <p><a href="https://gnunn1.github.io/tilix-web/">Tilix</a>, a advanced terminal mangager.</p>
+  </li>
+  <li>
+    <p><a href="https://flatpak.org/setup/">FlatHub</a>, a richer software store for linux.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/teejee2008/timeshift">Timeshift</a>, backup system to avoid unpridictable problems caused by update/grub/etc. Can be install using apt-get.</p>
+  </li>
+</ul>
+
+<h3 id="timezone-conflict-with-windows-dual-boot">Timezone Conflict with Windows Dual Boot</h3>
+
+<ul>
+  <li><a href="https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/">Explanation</a></li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">timedatectl set-local-rtc 1 <span class="nt">--adjust-system-clock</span>
+timedatectl</code></pre></figure>
+
+<h3 id="input-methods-configurations">Input Methods Configurations</h3>
+<p>I prefer fcitx to ibus.</p>
+
+<ul>
+  <li>Chinese: Sogou Pinyin 搜狗拼音</li>
+  <li>Japanese: Mozc</li>
+</ul>
+
+<p>Mozc uses F7 to overwrtite Katakana. Remember to put English Keyboard as primary input method so that you can use ctrl+blank to toggle it with others. And ctrl+shift can toggle between others.</p>
+
+<p>There is conflict between fcitx and the VS Code Editor when downloading it from snap store. So it is recommended to use Microsoft’s deb package.</p>
+
+:ET

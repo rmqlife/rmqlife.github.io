@@ -1,0 +1,30 @@
+I"¹<p>It can be really painful when the WIFI signal is weak. This post aims to solve the problem and create a LAN with an old WIFI router and a linux machine.</p>
+
+<p>Here are my hardware settings:</p>
+<ul>
+  <li>A WIFI router</li>
+  <li>A desktop installed with Ubuntu 18.04</li>
+  <li>A WIFI adapter (optional, can establish a stronger connection to the central router)</li>
+</ul>
+
+<p>And here are the main steps:</p>
+<ul>
+  <li>Connect the desktop with the router through an ethernet cable</li>
+  <li>Launch the network tool preinstalled on Ubuntu by typing <strong>nm-connection-editor</strong> in terminal</li>
+  <li>Click <strong>+</strong> button and select <strong>Ethernet</strong> to set the rule</li>
+  <li>Under the tab <strong>IPV4 settings</strong>, choose the option <strong>Shared to other computers</strong> for <strong>Method</strong> drag-down menu.</li>
+</ul>
+
+<p>Here is a draft for the wired connection:
+<img src="http://localhost:4000/images/adaptive_network_setting.png" alt="Wired Connection" /></p>
+
+<p>Then itâ€™s time to enjoy your stable and private WIFI connections!</p>
+
+<h3 id="sharing-wifi-over-wifi">Sharing WIFI over WIFI</h3>
+<ul>
+  <li>Set up a WIFI hotspot using <strong>nm-connection-editor</strong> in terminal</li>
+  <li>Create SSID and WPA2 password</li>
+  <li>Select device(WIFI MAC address)</li>
+  <li>To apply the created WIFI hotspot, use Hidden Network Tab (dots button on the top) within Gnome WIFI Settings.</li>
+</ul>
+:ET
