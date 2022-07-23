@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "葛底斯堡有什么"
+title: "葛底斯堡的硝烟"
 date: 2021-08-17
 categories: reading
 ---
